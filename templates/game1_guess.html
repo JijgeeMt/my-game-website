@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Санасан тоог таах</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h2>Санасан тоог таах тоглоом</h2>
+    <form method="post">
+        <p>1-100 хооронд тоо оруулна уу:</p>
+        <input type="hidden" name="secret" value="{{ secret }}">
+        <input type="number" name="number" required>
+        <button type="submit">Таах</button>
+    </form>
+    <p>{{ result }}</p>
+    <a href="/">Буцах</a>
+</body>
+</html>

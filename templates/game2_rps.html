@@ -1,0 +1,18 @@
+<!-- templates/game2_rps.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Хайч, Чулуу, Даавуу</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h2>Хайч, Чулуу, Даавуу</h2>
+    <form method="post">
+        <button name="choice" value="Хайч">✌️ Хайч</button>
+        <button name="choice" value="Чулуу">✊ Чулуу</button>
+        <button name="choice" value="Даавуу">🖐️ Даавуу</button>
+    </form>
+    <p>{{ result }}</p>
+    <a href="/">Буцах</a>
+</body>
+</html>

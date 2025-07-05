@@ -1,0 +1,17 @@
+<!-- templates/game4_fibonacci.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Фибоначчи Таавар</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h2>Фибоначчигийн дарааллын n = {{ n }} гэсэн гишүүнийг таа</h2>
+    <form method="post">
+        <input type="number" name="guess" required>
+        <button type="submit">Явуулах</button>
+    </form>
+    <p>{{ result }}</p>
+    <a href="/">Буцах</a>
+</body>
+</html>
